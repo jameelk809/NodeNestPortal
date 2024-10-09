@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request Page</title>
+    <link rel="stylesheet" href="/style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="api-section">
+            <h1>API Request Page</h1>
+            <h2>Create Product</h2>
+            <form id="create-product-form">
+                <input type="text" id="create-productName" placeholder="Product Name" required>
+                <input type="number" id="create-productPrice" placeholder="Product Price" required>
+                <div class="button-container">
+                    <button type="submit">Create Product</button>
+                </div>
+            </form>
+
+            <h2>Get All Products</h2>
+            <div class="button-container">
+                <button id="get-products-btn">Get All Products</button>
+            </div>
+
+            <h2>Get Product by ID</h2>
+            <form id="get-product-form">
+                <input type="text" id="get-productId" placeholder="Product ID" required>
+                <div class="button-container">
+                    <button type="submit">Get Product</button>
+                </div>
+            </form>
+
+            <h2>Update Product</h2>
+            <form id="update-product-form">
+                <input type="text" id="update-productId" placeholder="Product ID" required>
+                <input type="text" id="update-productName" placeholder="New Product Name">
+                <input type="number" id="update-productPrice" placeholder="New Product Price">
+                <div class="button-container">
+                    <button type="submit">Update Product</button>
+                </div>
+            </form>
+
+            <h2>Delete Product</h2>
+            <form id="delete-product-form">
+                <input type="text" id="delete-productId" placeholder="Product ID" required>
+                <div class="button-container">
+                    <button type="submit">Delete Product</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="response-section">
+            <h2>Response</h2>
+            <div class="response" id="response"></div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
