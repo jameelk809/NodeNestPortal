@@ -19,6 +19,8 @@
     "mongodb": "^6.9.0",
     "mongoose": "^8.7.0",
     "morgan": "^1.10.0",
+    "open": "^10.1.0",
+    "opener": "^1.5.2",
     "path": "^0.12.7"
   },
   "devDependencies": {
